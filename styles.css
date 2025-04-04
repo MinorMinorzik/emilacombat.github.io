@@ -1,0 +1,116 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Задает минимальную высоту для body */
+    align-items: center; /* Центрирование по горизонтали */
+    justify-content: center; /* Центрирование по вертикали */
+    text-align: center; /* Центрирование текста */
+}
+
+.social-icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(30, 30, 30, 0.8); /* Полупрозрачный фон */
+    border-radius: 5px; /* Закругленные углы */
+    padding: 5px; /* Отступы внутри панели */
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрирование иконок */
+}
+
+.social-icons img {
+    width: 30px; /* Размер иконок */
+    margin: 0 10px; /* Отступ между иконками */
+}
+
+h1 {
+    font-size: 36px; /* Размер заголовка */
+}
+
+.developer-list {
+    list-style-type: none; /* Убираем маркеры */
+    padding: 0; /* Убираем отступы */
+    font-size: 24px; /* Увеличенный размер шрифта для списка */
+}
+
+.developer-list li {
+    margin: 10px 0; /* Отступы между элементами списка */
+}
+
+footer {
+    margin-top: auto; /* Отодвигает footer вниз */
+    text-align: center; /* Центрирование текста в footer */
+    padding: 10px 0; /* Отступы для footer */
+}
+
+.small-button {
+    background-color: #007bff; /* Голубой цвет кнопок */
+    color: white;
+    border: none;
+    padding: 8px 12px; /* Уменьшенные отступы для кнопок */
+    cursor: pointer;
+    margin: 5px; /* Отступ между кнопками */
+    font-size: 14px; /* Уменьшенный размер текста кнопки */
+    border-radius: 5px; /* Закругленные углы */
+}
+
+.play-button {
+    background-color: #007bff; /* Голубой цвет кнопок */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-top: 20px; /* Отступ сверху */
+    font-size: 20px; /* Размер текста кнопки */
+    border-radius: 5px; /* Закругленные углы */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Плавный переход */
+}
+
+/* New styles for forms */
+form {
+    background-color: rgba(30, 30, 30, 0.9); /* Slightly transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the form */
+    margin: 20px; /* Margin around the form */
+    width: 250px; /* Уменьшенная ширина для форм */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 90%; /* Увеличенная ширина для полей ввода */
+    padding: 8px; /* Padding inside input fields */
+    margin: 10px 0; /* Margin between input fields */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #333333; /* Dark background for input fields */
+    color: #ffffff; /* White text color */
+}
+
+button {
+    width: 100%; /* Полная ширина для кнопок */
+    background-color: #007bff; /* Голубой цвет для всех кнопок */
+    color: white;
+    border: none;
+    padding: 10px; /* Padding inside buttons */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+}
+
+.back-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px; /* Отступ сверху */
+    font-size: 16px; /* Размер текста кнопки */
+    border-radius: 5px; /* Закругленные углы */
+    transition: background-color 0.3s; /* Плавный переход */
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Цвет при наведении */
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Регистрация - EmilaCombat</title>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_AUTH_DOMAIN",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_STORAGE_BUCKET",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+        const app = firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+
+        function register() {
+            const email = document.getElementById('registerEmail').value;
+            const password = document.getElementById('registerPassword').value;
+            auth.createUserWithEmailAndPassword(email, password)
+                .then((userCredential) => {
+                    alert('Registration successful!');
+                    window.location.href = 'index.html'; // Redirect to home page
+                })
+                .catch((error) => {
+                    alert(error.message);
+                });
+        }
+    </script>
+</head>
+<body>
+    <h2>Регистрация</h2>
+    <input type="email" id="registerEmail" placeholder="Email" required>
+    <input type="password" id="registerPassword" placeholder="Пароль" required>
+    <button onclick="register()">Зарегистрироваться</button>
+    <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+</body>
+</html>
